@@ -19,8 +19,6 @@ def index(request):
         import warnings
         warnings.filterwarnings("ignore")
 
-        os.environ["OPENAI_API_KEY"] = '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'
-
 
         loader = PyPDFLoader("condo rules and regulations.pdf")
         sample_doc = loader.load()
