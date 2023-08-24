@@ -10,13 +10,9 @@ from .models import Greeting
 
 # Create your views here.
 
+chat_history = []
 
 def index(request):
-    return render(request, "index.html")
-
-
-chat_history = []
-def db(request):
     query = request.GET.get('say')
 
     if query:
