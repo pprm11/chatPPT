@@ -60,4 +60,4 @@ def db(request):
 
     chat_history.append((query, result['answer']))
 
-    return render(request, "db.html", {"Sir Sebastian Livviestone": result['answer']})
+    return render(request, "db.html", {"greetings": chat_history})
