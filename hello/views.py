@@ -17,13 +17,13 @@ def index(request):
 
 chat_history = []
 def db(request):
-    query = request.query.say
+    query = request.GET.get('say')
 
     if query:
         import warnings
         warnings.filterwarnings("ignore")
 
-        os.environ["OPENAI_API_KEY"] = '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'
+        os.environ["OPENAI_API_KEY"] = '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'
 
 
         loader = PyPDFLoader("condo rules and regulations.pdf")
@@ -61,5 +61,7 @@ def db(request):
 
         chat_history.append((query, result['answer']))
 
+        print('a')
         return render(request, "db.html", {"greetings": chat_history})
+    print('b')
     return render(request, "db.html", {"greetings": []})
