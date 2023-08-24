@@ -16,6 +16,7 @@ chromadb==0.4.7
 click==8.1.7
 coloredlogs==15.0.1
 dataclasses-json==0.5.14
+dj-database-url==2.1.0
 Django==4.2.4
 emoji==2.8.0
 exceptiongroup==1.1.3
