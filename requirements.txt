@@ -80,5 +80,6 @@ uvicorn==0.23.2
 uvloop==0.17.0
 watchfiles==0.19.0
 websockets==11.0.3
+whitenoise==6.5.0
 yarl==1.9.2
 zipp==3.16.2
