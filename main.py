@@ -10,7 +10,7 @@ from langchain.vectorstores import Chroma
 import warnings
 warnings.filterwarnings("ignore")
 
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = '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'
 
 # Enable to save to disk & reuse the model (for repeated queries on the same data)
 PERSIST = False
